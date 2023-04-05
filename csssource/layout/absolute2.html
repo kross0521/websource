@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        background: yellow;
+        position: relative; /* absolute 요소 */
+      }
+      .box {
+        position: absolute;
+        height: 100px;
+      }
+      .a {
+        background: red;
+        right: 100%;
+        top: 100px;
+      }
+      .b {
+        background: green;
+        left: 200px;
+        top: 100px;
+      }
+      .c {
+        background: blue;
+        left: 100%;
+        bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        position:relative;
+
+        위치 상 부모 요소자신를 기준으로 배치
+        다른 요소들은 해당 요소가 움직인 걸 모름 ==> 가상으로 움직인다.
+    -->
+    <div class="container">
+      <div class="box a">Box AAAAAA</div>
+      <div class="box b">Box B</div>
+      <div class="box c">Box CCC</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore
+      sapiente quibusdam. Beatae illum ut qui laudantium neque magnam.
+      Architecto voluptatibus minus tenetur sed similique dolorum sequi sapiente
+      ex iste?
+    </p>
+  </body>
+</html>

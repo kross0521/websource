@@ -11,8 +11,9 @@
       }
       .box {
         background-color: white;
-        /* height: 50px;
-        overflow: auto; */
+        /*height: 50px;
+        overflow: visible;*/
+        overflow: hidden;
       }
       .left {
         float: left;
@@ -23,6 +24,9 @@
       p {
         border: 2px solid black;
       }
+      .clearfix {
+        clear: both; /* clear:left; clear:right */
+      }
     </style>
   </head>
   <body>
@@ -32,11 +36,16 @@
         overflow: auto; => 넘친 부분이 있는 경우만 잘라내고, 스크롤바를 이용하여 볼 수 있도록 해줌
         overflow: scroll; => 넘친 부분 잘라내고, 스크롤바(수평,수직)를 이용하여 볼 수 있도록
         overflow: visible; => 기본, 넘친 부분을 그대로 보여주기
-    -->
+    
+        float 속성 해제 => clear : both;
+                           overflow : hidden;
+    
+      -->
     <div class="box">
       <img src="left-arrow.png" alt="왼쪽 화살표" class="left" />
       <img src="right-arrow.png" alt="오른쪽 화살표" class="right" />
     </div>
+    <div class="clearfix">Awesome!!</div>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur amet
       alias esse voluptas odit, dolorem, tenetur sunt enim corrupti aliquam

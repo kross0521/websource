@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* food-slide
+            테두리 : 2px, 실선, green
+            너비 : 800px
+            높이 : 300px
+            가운데 정렬
+            안쪽 여백 : 10px
+        */
+      .float {
+        border: 2px, 실선, green;
+        width: 800px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      /* 이미지 : 왼쪽으로 배치 */
+      img {
+        float: left;
+      }
+
+      /* controls a
+            배경색 : #333
+            줄높이 : 50px
+            글자색 : 흰색
+            display : block 변경
+            글자 정렬 가운데
+        */
+      .controls a {
+        background: #333;
+        line-height: 50px;
+        color: white;
+        display: block;
+        text-align: center;
+        white-space: nowrap; /* 공백을 기준으로 엔터 적용 하지 말기 */
+        position: absolute;
+        top: calc(50%-25px);
+      }
+      .prev {
+        right: 100%;
+      }
+      .next {
+        left: 100%;
+      }
+      .box {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      .box1 {
+        left: 50px;
+        top: 50px;
+        background: red;
+      }
+      .box {
+        left: 50px;
+        top: 50px;
+        background: red;
+      }
+      .box1 {
+        left: 50px;
+        top: 50px;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="food-slide">
+      <img src="tomato.jpg" alt="" />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa tempore
+        id illo optio quas, voluptatum ex nisi neque, eos deserunt quod iure
+        fugit explicabo officia maxime repellendus excepturi ipsa repudiandae?
+      </p>
+      <div class="controls">
+        <a href="#" class="prev">previous project</a>
+        <a href="#" class="prev">Next project</a>
+      </div>
+    </div>
+  </body>
+</html>
