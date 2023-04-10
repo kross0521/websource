@@ -18,12 +18,17 @@
       value1 = 10; //재할당
       console.log(value1);
 
+      console.log(a);
+      var a = console.log(a);
+
       // let : 변수 재선언 불가, 할당, 블록레벨 스코프
       //   let value1 = 9;
 
+      // console.log(value2); //nnot access 'value2' before initialization
       let value2 = 6;
       console.log(value2);
-      //   ntaxError: Identifier 'value2' has already been declared
+
+      //   SyntaxError: Identifier 'value2' has already been declared
       //   let value2 = 7;
 
       value2 = 8; //재할당
