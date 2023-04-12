@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p></p>
+    <div id="callout2" class="callout fancy">
+      <p>A single HTML element can have multiple classes.</p>
+    </div>
+    <script>
+      // 두 개의 P를 생성한다.
+      const p1 = "<p>I was created dynamically</p>";
+      const p2 = "<p>I was also created dynamically!!</p>";
+
+      // content 의 현재 자식을 기준으로 하나는 앞 쪽에 하나는 뒤에 삽입
+      const content = document.getElementById("content"); // document.querySelector(#"content")
+
+      test.insertAdjacentHTML("beforebegin", p1); // 첫번째 자식
+      test.insertAdjacentHTML("beforeend", p2); // 마지막 자식
+
+      content.insertBefore(p1, current);
+
+      content.appendChild(p2);
+    </script>
+  </body>
+</html>
